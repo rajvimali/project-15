@@ -6,6 +6,9 @@ import { app } from './Firebase/Firebase'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import Register from './Components/Register'
 import Login from './Components/Login'
+import Admin from './Components/admin/Admin'
+import AddBrand from './Components/admin/AddBrand'
+import Addvehicles from './Components/admin/Addvehicles'
 
 
 
@@ -37,6 +40,9 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login logIn={logIn} setLogIn={setLogIn} />} />
           <Route path='/signup' element={<Register logIn={logIn} setLogIn={setLogIn} />} />
+          <Route path='/admin' element={<Admin />} />
+          <Route path='/addbrand' element={<AddBrand />} />
+          <Route path='/addvehicles' element={<Addvehicles />} />
         </Routes>
       </BrowserRouter>
     </>
