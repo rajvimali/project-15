@@ -48,10 +48,9 @@ function Header({ logIn, setLogIn }) {
 
                     </div>
                     <div className="btn-click mt-4">
-                        {/* <button className="btn bg-info text-white fw-bold "> <a href="#login" className='text-decoration-none'>LOGIN / </a><a href="#register" className='text-decoration-none'>REGISTER</a> </button> */}
-                        {!logIn ? <> <button className="btn bg-info text-white fw-bold "> <Link to="/login" className='text-decoration-none text-white'>LOGIN / </Link>
-                            <Link to="/signup" className='text-decoration-none  text-white '>REGISTER</Link></button> </> :
-                            <Link href='#' className="text-decoration-none btn btn-danger" onClick={handleLogout} to="/logout">Logout</Link>}
+                        {!logIn ? <> <button className="btn bg-info text-white fw-bold "> <Link to="/login" className='text-decoration-none'>LOGIN / </Link>
+                            <Link to="/signup" className='text-decoration-none'>REGISTER</Link></button> </> :
+                            <Link href='#' className="text-decoration-none  btn btn-danger" onClick={handleLogout} to="/logout">Logout</Link>}
                     </div>
                 </div>
             </div>
@@ -60,16 +59,19 @@ function Header({ logIn, setLogIn }) {
                     <div className="collapse navbar-collapse p-2" >
                         <ul className="navbar-nav  me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link to={"/"} className="nav-link  text-white fs-5" >Home</Link>
+                                <a className="nav-link  text-white fs-5" href="#">Home</a>
                             </li>
                             <li className="nav-item">
-                                <Link to={"/about"} className="nav-link  text-white fs-5" >About Us</Link>
+                                <a className="nav-link  text-white fs-5" href="#">About Us</a>
                             </li>
                             <li className="nav-item">
-                                <Link to={"/carlisting"} className="nav-link  text-white fs-5" >CarListing</Link>
+                                <Link to="/carlist" className="nav-link  text-white fs-5" >CarListing</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to={"/contactus"} className="nav-link  text-white fs-5" >Contact Us</Link>
+                                <a className="nav-link  text-white fs-5" href="#">FAQs</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link  text-white fs-5" href="#contactus">Contact Us</a>
                             </li>
 
                         </ul>
