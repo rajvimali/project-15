@@ -59,19 +59,19 @@ function Header({ logIn, setLogIn }) {
                     <div className="collapse navbar-collapse p-2" >
                         <ul className="navbar-nav  me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link  text-white fs-5" href="#">Home</a>
+                                <Link to="/home" className="nav-link  text-white fs-5" href="#">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link  text-white fs-5" href="#">About Us</a>
+                                <Link to="/aboutus" className="nav-link  text-white fs-5" href="#">About Us</Link>
                             </li>
                             <li className="nav-item">
                                 <Link to="/carlist" className="nav-link  text-white fs-5" >CarListing</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link  text-white fs-5" href="#">FAQs</a>
+                                <Link to="/carlist" className="nav-link  text-white fs-5" href="#">FAQs</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link  text-white fs-5" href="#contactus">Contact Us</a>
+                                <Link to="/contectlist" className="nav-link  text-white fs-5">Contact Us</Link>
                             </li>
 
                         </ul>

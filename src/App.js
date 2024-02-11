@@ -15,6 +15,10 @@ import Carbook from './Components/Carbook'
 import Booking from './Components/admin/Booking'
 import Contactlist from './Components/admin/Contactlist'
 import ManageContact from './Components/admin/ManageContact'
+import Addtestimonial from './Components/Addtestimonial'
+import Showtestimonial from './Components/Showtestimonial'
+import ChangePassword from './Components/ChangePassword'
+import Sidebar from './Components/admin/Sidebar'
 
 
 
@@ -49,12 +53,17 @@ function App() {
           <Route path='/signup' element={<Register logIn={logIn} setLogIn={setLogIn} />} />
           <Route path='/admin' element={<Admin />} />
           <Route path='/addbrand' element={<AddBrand />} />
+          <Route path='/sidebar' element={<Sidebar />} />
           <Route path='/carlist' element={<CarListing />} />
           <Route path='/addvehicles' element={<Addvehicles />} />
           <Route path='/bookcar' element={<Carbook />} />
           <Route path='/booking' element={<Booking />} />
           <Route path='/menagecontect' element={<ManageContact />} />
           <Route path='/contectlist' element={<Contactlist />} />
+          <Route path='/testimonial' element={<Addtestimonial />} />
+          <Route path='/showtestimonial' element={<Showtestimonial />} />
+          <Route path='/changepassword' element={<ChangePassword />} />
+
         </Routes>
       </BrowserRouter>
     </>
